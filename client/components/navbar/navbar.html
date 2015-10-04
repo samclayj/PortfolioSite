@@ -1,0 +1,67 @@
+<!-- <div class="navbar navbar-default navbar-static-top" ng-controller="NavbarCtrl">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">no-sass</a>
+    </div>
+    <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+            <a ng-href="{{item.link}}">{{item.title}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+<div id="navbar">
+      <nav class="navbar navbar-ct-danger" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+
+            </button>
+            <a class="navbar-brand" href="#">Samuel Jentsch</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+              <li class="active"><a href="#">Projects</a></li>
+              <li class="active"><a href="#">Wakatime</a></li>
+
+              <li class="dropdown">
+
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+
+                <ul class="dropdown-menu">
+
+                  <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+                      <a ng-href="{{item.link}}">{{item.title}}</a>
+                  </li>
+
+                  <li class="divider"></li>
+
+                  <li><a href="#">One more separated link</a></li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div><!-- /.navbar-collapse -->
+
+        </div><!-- /.container-fluid -->
+
+      </nav>
+
+  </div><!--  end navbar -->
