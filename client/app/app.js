@@ -9,7 +9,7 @@ angular.module('noSassApp', [
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider
-      .otherwise('/');
+    .otherwise('/');
 
     $locationProvider.html5Mode(true);
   });

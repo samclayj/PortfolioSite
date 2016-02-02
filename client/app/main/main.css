@@ -41,57 +41,80 @@
 }
 
 .profile-image {
-  width:225px;
   float:right;
-  margin-right:20px;
-  border-radius: 500px;
+  margin-right:80px;
 }
-
 .hexagon {
   position: relative;
-  margin: 100px auto;
-  width: 190px;
-  height: 110px;
+  width: 250px;
+  height: 144.34px;
+  margin: 72.17px 0;
   background-image: url('../../assets/images/profile.jpg');
-  background-size: cover;
-  background-position: center center;
+  background-size: auto 277.1281px;
+  background-position: center;
+  border-left: solid 5px #838078;
+  border-right: solid 5px #838078;
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
   z-index: 1;
-}
-
-.hexagon .face1,
-.hexagon .face2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  width: 176.78px;
+  height: 176.78px;
   overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
   background: inherit;
-  z-index: -1;
-  /* Keeps borders smooth in webkit */
-  backface-visibility: hidden;
+  left: 31.61px;
 }
-.hexagon .face1:before,
-.hexagon .face2:before {
-  content: '';
+
+/*counter transform the bg image on the caps*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
   position: absolute;
-  width: 220px;
-  height: 220px;
+  width: 240.0000px;
+  height: 138.5640646055102px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-69.2820px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-69.2820px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-69.2820px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
   background: inherit;
 }
 
-.hexagon .face1 { transform: rotate(60deg); }
-.hexagon .face1:before {
-  left: 0;
-  transform-origin: left top;
-  transform: rotate(-60deg) translate(-110px, 0);
+.hexTop {
+  top: -88.3883px;
+  border-top: solid 7.0711px #838078;
+  border-right: solid 7.0711px #838078;
 }
 
-.hexagon .face2 { transform: rotate(-60deg); }
-.hexagon .face2:before {
-  right: 0;
-  transform-origin: right top;
-  transform: rotate(60deg) translate(110px, 0);
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -88.3883px;
+  border-bottom: solid 7.0711px #838078;
+  border-left: solid 7.0711px #838078;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 2.8868px;
+  left: 0;
+  width: 240.0000px;
+  height: 138.5641px;
+  z-index: 2;
+  background: inherit;
 }
 
 #contact {
@@ -104,4 +127,16 @@
 
 #aboutMe p {
     text-align: left;
+}
+
+#submit {
+    float: right;
+}
+
+#contactText {
+    float: right;
+}
+
+.aboutMeSection p {
+    line-height: 2;
 }

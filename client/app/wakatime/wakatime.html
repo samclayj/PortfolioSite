@@ -1,0 +1,68 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-8">
+              <h1 class="text-info">Wakatime Charts</h1>
+              <p class="lead">Here are some to-the-minute analytics of what I have been working on, and what languages I've been working in.</p>
+          </div>
+          <div class="col-md-4 offset">
+              <i class="fa fa-bar-chart-o big-font-awesome-icon"></i>
+          </div>
+          </div>
+    </div>
+</header>
+
+
+<div id="carousel">
+       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+       <div class="carousel slide" data-ride="carousel">
+
+             <!-- Indicators -->
+             <ol class="carousel-indicators">
+               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+               <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+               <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+             </ol>
+
+             <!-- Wrapper for slides -->
+             <div class="carousel-inner">
+               <div class="item active">
+                   <div class="row col-md-offset-2">
+                       <div class="col-md-10">
+                            <div class="ct-chart" id="languages-line-chart"></div>
+                            <p>Overall time by language used.</p>
+                        </div>
+                   </div>
+               </div>
+               <div class="item">
+                   <div class="row col-md-offset-4">
+                       <div class="col-md-4">
+                           <div class="ct-chart" id="languages-pie-chart"></div>
+                           <p>Split of language usage by time.</p>
+                        </div>
+                   </div>
+               </div>
+               <div class="item">
+                   <div class="row col-md-offset-2">
+                       <div class="col-md-10">
+                           <div class="ct-chart" id="languages-bar-chart"></div>
+                           <p>Overall Time</p>
+                        </div>
+                   </div>
+               </div>
+             </div>
+
+             <!-- Controls -->
+             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+               <span class="fa fa-angle-left"></span>
+             </a>
+             <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+               <span class="fa fa-angle-right"></span>
+             </a>
+       </div>
+</div> <!-- end carousel -->
+
+<div ng-include="'components/footer/footer.html'"></div>

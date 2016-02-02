@@ -14,19 +14,25 @@
     <!-- build:css(client) app/vendor.css -->
       <!-- bower:css -->
       <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+      <link rel="stylesheet" href="bower_components/chartist/dist/chartist.min.css" />
       <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,client}) app/app.css -->
     <link rel="stylesheet" href="app/app.css">
       <!-- injector:css -->
       <link rel="stylesheet" href="app/app.css">
+      <link rel="stylesheet" href="app/experience/experience.css">
       <link rel="stylesheet" href="app/main/main.css">
+      <link rel="stylesheet" href="app/projects/projects.css">
+      <link rel="stylesheet" href="app/wakatime/wakatime.css">
       <link rel="stylesheet" href="components/modal/modal.css">
       <!-- endinjector -->
     <!-- endbuild -->
     <link rel="stylesheet" href="./x_paper_kit_1.0/assets/css/ct-paper.css" />
     <link href="./assets/CSS/rotating-card.css" rel="stylesheet" />
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Charts -->
   </head>
   <body ng-app="noSassApp">
     <!--[if lt IE 7]>
@@ -34,7 +40,8 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div ui-view=""></div>
+    <div ui-view="">
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
@@ -61,6 +68,8 @@
       <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
       <script src="bower_components/lodash/dist/lodash.compat.js"></script>
       <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+      <script src="bower_components/chartist/dist/chartist.min.js"></script>
+      <script src="bower_components/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
       <!-- endbower -->
     <!-- endbuild -->
 
@@ -69,8 +78,14 @@
 
         <script src="app/app.js"></script>
           <!-- injector:js -->
+          <script src="app/experience/experience.controller.js"></script>
+          <script src="app/experience/experience.js"></script>
           <script src="app/main/main.controller.js"></script>
           <script src="app/main/main.js"></script>
+          <script src="app/projects/projects.controller.js"></script>
+          <script src="app/projects/projects.js"></script>
+          <script src="app/wakatime/wakatime.controller.js"></script>
+          <script src="app/wakatime/wakatime.js"></script>
           <script src="components/modal/modal.service.js"></script>
           <script src="components/navbar/navbar.controller.js"></script>
           <!-- endinjector -->

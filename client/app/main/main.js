@@ -7,5 +7,5 @@ angular.module('noSassApp')
         url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
-      });
+      })
   });

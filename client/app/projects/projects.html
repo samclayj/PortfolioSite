@@ -1,0 +1,164 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class="text-info">Projects</h1>
+        <p class="lead">Here are some of the projects I have worked on, along with how they were implemented and the problem they solve.</p>
+      </div>
+      <div class="col-md-4">
+          <i class="fa fa-database big-font-awesome-icon"></i>
+      </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div data-ng-controller="ProjectsCtrl" data-ng-init="init()"></div>
+
+<div class="section section-light-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+              <h3>Raspberry Pi Factory Temperature Sensor</h3>
+              <p>The Raspberry Pi temperature sensor was part of a project for the GE Oil & Gas Intern Innovation contest in 2015. This project offered a great experience in a full-stack development project using the LAMP stack.</p>
+            </br>
+                <p>For this project, my team and I were tasked to create a piece of software, using Raspberry Pi as the operating platform, to solve a real-world business problem. The problem that we decided on was a temperature sensor for factor use. My role on this team was to create and implement the software to implement our solution. Additionally, we created presentation material and a project charter to present this idea to business leaders.</p>
+            </br>
+                <p>The implementation and goals of this project consisted of <b>3</b> parts:</p>
+                    <ul>
+                        <li>Reading the temperature using the Raspberry Pi hardware.</li>
+                        <li>Storing this data in a usable and analyzable format.</li>
+                        <li>Presenting the data in an accessible and useful fashion.</li>
+                    </ul>
+                <p>Reading the temperature was accomplished through a C program that interfaced with the Raspberry Pi hardware. Essentially, readings are taken every few seconds and inserted into a SQL database.</p>
+            </br>
+                <p>
+                Storing the data was achieved through a SQL database on an Amazon Web Services EC2 instance. This was fantastic experience in setting up a LAMP server from scratch and connecting to it from a device like the Raspberry Pi.
+                </p>
+            </br>
+                <p>
+                Finally, presenting the data required creating a front end. I hosted a site on the EC2 instance we already had up and running and created interactive charts using Google's chart API. Additionally, the site supported exporting all of the data into a CSV file for use in a program like Excel. This provided a simple way for business users to interact with the data.
+                </p>
+            </div>
+            <div class ="col-md-2">
+                <img src="../../assets/images/RpiLogo.png" alt="Thumbnail Image" class="img-responsive">
+            </div>
+        </div>
+    </br>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../../assets/images/FactorySensor/1_Banner.png" alt="Rounded Image" class="img-thumbnail img-responsive">
+            </div>
+            <div class="col-md-6">
+                <img src="../../assets/images/FactorySensor/2_LinePlot.png" alt="Rounded Image" class="img-thumbnail img-responsive">
+            </div>
+        </div>
+    </br>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../../assets/images/FactorySensor/3_Scatter.png" alt="Rounded Image" class="img-thumbnail img-responsive">
+            </div>
+            <div class="col-md-6">
+                <img src="../../assets/images/FactorySensor/4_Table.png" alt="Rounded Image" class="img-thumbnail img-responsive">
+            </div>
+        </div>
+    </br>
+        <div class="row">
+            <div class="col-md-10">
+              <p>In the end, our team obtained 1st place for our project after 2 elimination rounds and two presentations, including a successful live demo of the entire system.</p>
+            </div>
+            <div class ="col-md-2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class ="col-md-2">
+                <img src="../../assets/images/SFA_Logo.png" alt="Thumbnail Image" class="img-responsive">
+            </div>
+            <div class="col-md-10">
+              <h3>Art History Helper</h3>
+              <p>This iOS application was designed and created as part of an honors project with the SFA Art Department. The application essentially allows for the studying of important terms and works of art, categorized by time period.</p>
+            </br>
+                <p>I worked with an art professor to curate content for the application. A lot of effort went into creating a design and UI flow that was modern and somewhat artistic.</p>
+            </br>
+                <p>The core functionality of the application allows for the revision of flashcards and art pieces, including randomization and progress reports.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class ="col-md-2">
+            </div>
+            <div class="col-md-10">
+                <p>This was a custom iOS application providing excellent experience in mobile user interface design, and languages like Objective-C. Additionally, learning how to use the Cocoa-Touch library was fascinating, and provided a great entry into iOS development.
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="section section-light-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+              <h3>Cyber Intelligence Portal</h3>
+              <p>This was a full-stack LAMP project allowing for real-time views of cyber intelligence threats by business leaders using visual analysis APIs. In addition to the development experience, this project provided experience in the development of project charters and budgeting for development costs/maintenance of the product. I worked internationally with several members of the team to determine requirements for the project, pitch the project to leadership, and finally complete the implementation.</p>
+            </br>
+                <p>The goal was to provide an engaging and interactive view of current cyber threats for viewers of any technical level and to allow the security team to quickly alert any employees of potential issues.</p>
+            </br>
+            </div>
+            <div class ="col-md-2">
+                <img src="../../assets/images/GE_Logo.png" alt="Thumbnail Image" class="img-responsive">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                <p>Development took place over a 3 month period. I was the primary developer and designer of the project. The requirements included the goals previously mentioned, along with a more granular requirement that a user of any technical ability be able to update the portal. These requirements were gathered over the course of several weeks through discussions with many leaders and rapid-prototyping.</p>
+            </br>
+                <p>In order to develop the product, I made a custom website and server using the LAMP stack on an Amazon Web Services instance. I decided to use the open source Wordpress.org platform to allow for a backend dashboard for simple security updates. I customized the Wordpress software so that it would be incorporated into the site and match all of the elements used.</p>
+            </br>
+                <p>I configured the site to match company branding, added all of the interactive analytics products in a cohesive dashboard, created notifications for important alerts, and configured a custom Wordpress portion to allow for easy content updates.</p>
+            </div>
+            <div class ="col-md-2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class ="col-md-2">
+                <img src="../../assets/images/Angular_Logo.png" alt="Thumbnail Image" class="img-responsive">
+            </div>
+            <div class="col-md-10">
+              <h3>This Portfolio Site</h3>
+              <p>This portfolio site is actually a MEAN stack project. I decided to use this project as an opportunity to familiarize myself with JavaScript, AngularJS, Node.js, Express.js, and MongoDB.</p>
+            </br>
+                <p>All of the content is presented using MEAN tools and libraries.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class ="col-md-2">
+            </div>
+            <div class="col-md-10">
+                <p>Beginning this project was a little overwhelming. There are lots of technologies associated the MEAN stack that are somewhat difficult to connect at first. I began by creating simple one page applications, and then moved on by learning Angular routing, finding utilities like Yeoman, and taking advantage of libraries and packages using Angular directives to provide content. Learning about NPM, Grunt, and Bower and how they are used to configure and control dependencies was incredibly useful and powerful.</p>
+            </br>
+                <p>Bootstrap was used for all styling, adding custom style when absolutely necessary. All of the charts on the Wakatime page are automatically populated by making daily API calls to Wakatime, parsing this data, and saving it to a MongoDB instance. This data is then read from the database and presented in the charts.</p>
+            </br>
+                <p>The charts themselves use Chartist.js, a charting API with angular directives available to quickly create dynamic charts.</p>
+            </br>
+                <p>Testing and deploying the project was another interesting aspect. I created a Vagrant Box configured to use the MEAN stack for local testing. Additionally, this local box used a git repository as its sync folder to ensure the data was backed up.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div ng-include="'components/footer/footer.html'"></div>
